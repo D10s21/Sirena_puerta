@@ -1,0 +1,7 @@
+{
+    "version": "1.0",
+    "app": "LABORATORIO_SENSOR",
+    "signals": {
+        "SEN": [13, "IN"]
+    }
+}

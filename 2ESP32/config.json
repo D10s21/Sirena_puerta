@@ -1,0 +1,15 @@
+{
+    "version": "1.0",
+    "app": "LABORATORIO_SIRENA",
+    "sensor_ip": "192.207.110.202",
+    "signals": {
+        "AUXOUT": [32, "OUT"],
+        "SIREN":  [33, "OUT"]
+    },
+"rules": [
+        [{"on": ["SEN"], "param": 10000}, {"pulseOn": ["SIREN"], "param": 300}],
+        [{"on": ["SEN"], "param": 15000}, {"pulseOn": ["SIREN"], "param": 300}],
+        [{"on": ["SEN"], "param": 20000}, {"on": ["SIREN"]}],
+        [{"off": ["SEN"]},                {"off": ["SIREN"]}]
+    ]
+}
