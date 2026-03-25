@@ -89,7 +89,7 @@ ESP32 #1 (Sensor)            ESP32 #2 (Sirena)
 
 ### 2. Configurar credenciales Wi-Fi
 
-Edita `secrets.py` en **ambas** placas:
+Crea `secrets.py` en **ambas** placas:
 
 ```python
 WIFI_SSID     = "TU_NOMBRE_DE_RED"
